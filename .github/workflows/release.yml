@@ -1,0 +1,19 @@
+name: GitHub Release
+
+on:
+    push:
+        tags:
+            - "v*.*.*"
+    workflow_dispatch:
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v6
+
+            - name: Create GitHub Release
+              uses: softprops/action-gh-release@v3
+              with:
+                  token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
