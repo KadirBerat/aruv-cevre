@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
-    <title>Solaria - Solar Energy HTML Template</title>
+    <title>Arüv Çevre - Haber Detay</title>
     <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-    <meta content="Solaria - Ecology & Solar Energy HTML Template" name="description" >
+    <meta content="Arüv Çevre - Haber Detay" name="description" >
     <meta content="" name="keywords" >
     <meta content="" name="author" >
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
     <link href="css/style.css" rel="stylesheet" type="text/css" >
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-1.css" rel="stylesheet" type="text/css" >
 
+    <style>
+        .d-tagline span {
+            background: #FBEC6B !important;
+            color: #000 !important;
+            font-weight: 700;
+        }
+
+        .blog-read img {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="wrapper">
         <a href="#" id="back-to-top"></a>
-        
+
         <!-- preloader begin -->
         <div id="de-loader"></div>
         <!-- preloader end -->
@@ -73,44 +85,39 @@
                             <div class="de-flex-col header-col-mid">
                                 <!-- mainemenu begin -->
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="index.html">Home</a>
+                                    <li><a class="menu-item" href="index.html">Anasayfa</a>
+                                    </li>
+                                    <li><a class="menu-item" href="about.html">Kurumsal</a>
                                         <ul>
-                                            <li><a href="index.html">Homepage 1</a></li>
-                                            <li><a href="homepage-2.html">Homepage 2</a></li>
-                                            <li><a href="homepage-3.html">Homepage 3</a></li>
-                                            <li><a href="homepage-4.html">Homepage 4</a></li>
-                                            <li><a href="homepage-5.html">Homepage 5</a></li>
+                                            <li><a href="about.html">Hakkımızda</a></li>
+                                            <li><a href="#">Tanıtım Kataloğu</a></li>
+                                            <li><a href="hr.html">İnsan Kaynakları</a></li>
+                                            <li><a href="news.html">Basın Odası</a></li>
+                                            <li><a href="">Belgelerimiz</a></li>
+                                            <li><a href="team.html">Ekibimiz</a></li>
+                                            <li><a href="photo-gallery.html">Fotoğraf Galerisi</a></li>
+                                            <li><a href="video-gallery.html">Video Galerisi</a></li>
+                                            <li><a href="quality-policy.html">Kalite Politikamız</a></li>
+                                            <li><a href="announcements.html">Duyurular</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="menu-item" href="services.html">Services</a>
+                                    <li><a class="menu-item" href="industries.html">Faaliyet Alanlarımız</a>
                                         <ul>
-                                            <li><a href="services.html">All Services Style 1</a></li>
-                                            <li><a href="services-2.html">All Services Style 2</a></li>
-                                            <li><a href="service-single.html">Service Single</a></li>
-                                            <li><a href="industries.html">Industries We Serve</a></li>
-                                            <li><a href="service-area.html">Service Area</a></li>
-                                            <li><a href="how-it-works.html">How It Works</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
+                                            <li><a href="services-01.html">Müşavirlik Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Taahhüt Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Peyzaj Hizmetlerimiz</a></li>
+                                            <li><a href="services-02.html">Çevre Mühendisliği Hizmetlerimiz</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="menu-item" href="projects.html">Projects</a>
+                                    <li><a class="menu-item" href="">Referanslarımız</a>
                                         <ul>
-                                            <li><a href="projects.html">Projects Default</a></li>
-                                            <li><a href="projects-slider.html">Projects Slider</a></li>
-                                            <li><a href="projects-carousel.html">Projects Carousel</a></li>
-                                            <li><a href="project-single.html">Project Details</a></li>
+                                            <li><a href="">Müşavirlik Referanslarımız</a></li>
+                                            <li><a href="">Taahhüt Referanslarımız</a></li>
+                                            <li><a href="">Peyzaj Referanslarımız</a></li>
+                                            <li><a href="">Danışmanlık Referanslarımız</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="menu-item" href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="careers.html">Careers</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="menu-item" href="blog.html">Blog</a></li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    <li><a class="menu-item" href="contact.html">İletişim</a></li>
                                 </ul>
                                 <!-- mainmenu end -->
                             </div>
@@ -142,187 +149,168 @@
                     <div class="row gy-4 gx-5 align-items-center">
                         <div class="col-lg-12">
                             <div class="spacer-double sm-hide"></div>
-                            <h5 class="wow fadeInUp">Power Your Future with Clean Energy</h5>
-                            <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">Careers</h1>
+                            <h2 class="mb-3 wow fadeInUp" data-wow-delay=".2s">Güneş Enerjisinde Yeni Teknolojiler</h2>
                             <div class="border-bottom mb-3"></div>
                             <ul class="crumb wow fadeInUp">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">Careers</li>
+                                <li><a href="index.html">Anasayfa</a></li>
+                                <li><a href="news.html">Haberler</a></li>
+                                <li class="active">Güneş Enerjisinde Yeni Teknolojiler</li>
                             </ul>   
                         </div>
                     </div>
                 </div>
 
+                <div class="gradient-edge-bottom h-50"></div>
                 <div class="sw-overlay"></div>
             </section>
-            
-
+             
             <section>
                 <div class="container">
-                    
-                    <div class="row g-4">
-                        <div class="col-lg-12">
+                    <div class="row gx-5">
+                        <div class="col-lg-8">
+                            <div class="blog-read">
+
+                                <div class="post-image rounded-1 mb-4 overflow-hidden relative">
+                                    <div class="d-tagline">
+                                        <span>Teknoloji</span>
+                                    </div>
+                                    <img src="images/blog/1.webp" class="w-100" alt="">
+                                </div>
+
+                                <p>
+                                    Güneş enerjisi sektörü, her geçen gün gelişen teknolojilerle daha verimli ve erişilebilir hale geliyor. Arüv Çevre olarak, sektördeki en son gelişmeleri yakından takip ediyor ve projelerimizde en modern çözümleri sunuyoruz. İşte güneş enerjisi dünyasını değiştiren yeni teknolojiler:
+                                </p>
+
+                                <ol class="ol-style-1">
+                                  <li>
+                                    <h4>Çift Yüzeyli (Bifacial) Paneller</h4>
+                                    <p>
+                                      Geleneksel panellerin aksine, her iki yüzeyinden de enerji üretebilen bu paneller, zeminden yansıyan ışığı da kullanarak verimliliği %30'a kadar artırabiliyor.
+                                    </p>
+                                  </li>
+
+                                  <li>
+                                    <h4>Yüzer Güneş Enerjisi Santralleri (Floating PV)</h4>
+                                    <p>
+                                      Su yüzeyine kurulan bu sistemler, hem arazi kullanımından tasarruf sağlıyor hem de suyun soğutma etkisiyle panellerin daha verimli çalışmasına imkan tanıyor.
+                                    </p>
+                                  </li>
+
+                                  <li>
+                                    <h4>Şeffaf Güneş Panelleri</h4>
+                                    <p>
+                                      Pencere camlarına entegre edilebilen bu teknoloji, binaların dış cephelerini enerji üreten yüzeylere dönüştürerek akıllı şehir konseptine büyük katkı sağlıyor.
+                                    </p>
+                                  </li>
+
+                                  <li>
+                                    <h4>Gelişmiş Depolama Sistemleri</h4>
+                                    <p>
+                                      Yeni nesil lityum-iyon ve katı hal pilleri, güneşten elde edilen enerjinin daha uzun süre ve daha güvenli bir şekilde saklanmasını mümkün kılıyor.
+                                    </p>
+                                  </li>
+                                </ol>
+
+                                <p>
+                                    Sürdürülebilir bir gelecek için teknoloji odaklı yaklaşımımızla çalışmalarımıza devam ediyoruz. Güneş enerjisi çözümlerimiz hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz.
+                                </p>
+
+                            </div>
+
+                            <div class="spacer-single"></div>
+
+                            <div id="blog-comment">
+                                <h4>Yorumlar (0)</h4>
+
+                                <div class="spacer-half"></div>
+
+                                <div id="comment-form-wrapper">
+                                    <h4>Yorum Bırakın</h4>
+                                    <div class="comment_form_holder">
+                                        <form id="contact_form" name="form1" class="form-border" method="post" action="#">
+
+                                            <label>Adınız</label>
+                                            <input type="text" name="name" id="name" class="form-control" >
+
+                                            <label>E-posta <span class="req">*</span></label>
+                                            <input type="text" name="email" id="email" class="form-control" >
+                                            
+                                            <label>Mesajınız <span class="req">*</span></label>
+                                            <textarea cols="10" rows="10" name="message" id="message" class="form-control"></textarea>
+                                            
+                                            <p id="btnsubmit">
+                                                <input type="submit" id="send" value="Gönder" class="btn-main" ></p>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="widget widget-post">
+                                <h4>Popüler Haberler</h4>
+                                <ul class="de-bloglist-type-1">
+                                  <li>
+                                    <div class="d-image">
+                                      <img src="images/blog/2.webp" alt="">
+                                    </div>
+                                    <div class="d-content">
+                                      <a href="#">
+                                        <h4>Güneş Enerjisinin Temelleri</h4>
+                                      </a>
+                                      <div class="d-date">10 Oca 2025</div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <div class="d-image">
+                                      <img src="images/blog/3.webp" alt="">
+                                    </div>
+                                    <div class="d-content">
+                                      <a href="#">
+                                        <h4>2025'te Güneş Enerjisine Geçmenin Avantajları</h4>
+                                      </a>
+                                      <div class="d-date">22 Şub 2025</div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <div class="d-image">
+                                      <img src="images/blog/4.webp" alt="">
+                                    </div>
+                                    <div class="d-content">
+                                      <a href="#">
+                                        <h4>Güneş Panelleri Hakkında Bilinen Yanlışlar</h4>
+                                      </a>
+                                      <div class="d-date">05 Mar 2025</div>
+                                    </div>
+                                  </li>
+                                </ul>
+
+                            </div>
                             
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Solar Installation Technician</h3>
-                                        <p>Join our field team to install cutting-edge solar systems on residential rooftops.</p>
-                                        <div class="d-tag">On-site</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
+                            <div class="widget widget_tags">
+                                <h4>Popüler Etiketler</h4>
+                                <ul>
+                                    <li><a href="#link">Güneş</a></li>
+                                    <li><a href="#link">Enerji</a></li>
+                                    <li><a href="#link">Teknoloji</a></li>
+                                    <li><a href="#link">Sürdürülebilirlik</a></li>
+                                    <li><a href="#link">Çevre</a></li>
+                                    <li><a href="#link">Kurumsal</a></li>
+                                </ul>
                             </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Solar Design Engineer</h3>
-                                        <p>Create efficient solar panel layouts and ensure systems meet performance requirements.</p>
-                                        <div class="d-tag">Remote</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Renewable Energy Sales Executive</h3>
-                                        <p>Help homeowners understand and adopt solar energy through strategic sales efforts.</p>
-                                        <div class="d-tag">Remote</div>
-                                        <div class="d-tag">Commission + Base</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Field Operations Manager</h3>
-                                        <p>Oversee installation teams and manage daily field operations to ensure smooth execution.</p>
-                                        <div class="d-tag">On-site</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Customer Support Specialist</h3>
-                                        <p>Assist customers with inquiries about solar products, billing, and technical support.</p>
-                                        <div class="d-tag">Remote</div>
-                                        <div class="d-tag">Part-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Project Manager – Solar Installations</h3>
-                                        <p>Coordinate installation timelines, resource allocation, and client communications.</p>
-                                        <div class="d-tag">Hybrid</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Solar Marketing Coordinator</h3>
-                                        <p>Develop and execute campaigns to boost awareness of BrightHome’s solar solutions.</p>
-                                        <div class="d-tag">Remote</div>
-                                        <div class="d-tag">Contract</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Electrical Engineer – Solar Systems</h3>
-                                        <p>Design, evaluate, and troubleshoot solar electrical systems for residential use.</p>
-                                        <div class="d-tag">On-site</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Permitting Specialist</h3>
-                                        <p>Manage permit applications and ensure compliance with local solar installation regulations.</p>
-                                        <div class="d-tag">Hybrid</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
-                            <div class="mb-5 pb-5 border-bottom relative">
-                                <div class="row g-4">
-                                    <div class="col-sm-9">
-                                        <h3>Warehouse & Logistics Coordinator</h3>
-                                        <p>Ensure timely delivery and inventory management of solar equipment and materials.</p>
-                                        <div class="d-tag">On-site</div>
-                                        <div class="d-tag">Full-time</div>
-                                    </div>
-                                </div>
-                                <div class="mb-5 d-lg-none d-sm-block"></div>
-                                <div class="abs abs-middle end-0 p-sm-relative">
-                                    <a class="btn-main fx-slide" href="#"><span>Apply Now</span></a>
-                                </div>
-                            </div>
-
 
                         </div>
                     </div>
-
                 </div>
-            </section>
-            
+            </section>                        
+
         </div>
         <!-- content end -->
-        
+
         <!-- footer begin -->
         <footer class="section-dark">
           <div class="container relative z-2">
@@ -423,10 +411,11 @@
               <img src="images/misc/c1-flip.webp" class="w-100 rtl-show wow fadeInLeft" data-wow-duration="2s" alt="">
           </div>
         </footer>
+
         <!-- footer end -->
     </div>
 
-
+    <!-- overlay content begin -->
     <div id="extra-wrap" class="text-light">
         <div id="btn-close">
             <span></span>
@@ -474,6 +463,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/custom-swiper-1.js"></script>
     <script src="js/custom-marquee.js"></script>
 
 </body>
