@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Solaria - Solar Energy HTML Template</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Solaria - Ecology & Solar Energy HTML Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-1.css" rel="stylesheet" type="text/css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <style>
+        .play-badge {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            font-size: 2.25rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .35));
+            color: #fff;
+            opacity: .9;
+            transition: transform .2s ease, opacity .2s ease;
+        }
+
+        .video-thumb:hover .play-badge {
+            transform: scale(1.06);
+            opacity: 1;
+        }
+
+        .gallery-item-wrap {
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            display: block;
+        }
+
+        .gallery-item-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+
+        <!-- preloader begin -->
+        <div id="de-loader"></div>
+        <!-- preloader end -->
+
+        <!-- header begin -->
+        <header class="transparent">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="d-flex">
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-location-pin"></i>100 Solar Ave, San Diego, CA</a></div>
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-phone"></i>+1 800 987 654</a></div>
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-envelope"></i>support@solaria.com</a></div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo-white.webp" alt="" >
+                                        <img class="logo-mobile" src="images/logo-white.webp" alt="" >
+                                    </a>
+                                </div>
+                                <!-- logo end -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainemenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Anasayfa</a>
+                                    </li>
+                                    <li><a class="menu-item" href="about.html">Kurumsal</a>
+                                        <ul>
+                                            <li><a href="about.html">Hakkımızda</a></li>
+                                            <li><a href="#">Tanıtım Kataloğu</a></li>
+                                            <li><a href="hr.html">İnsan Kaynakları</a></li>
+                                            <li><a href="news.html">Basın Odası</a></li>
+                                            <li><a href="documents.html">Belgelerimiz</a></li>
+                                            <li><a href="team.html">Ekibimiz</a></li>
+                                            <li><a href="photo-gallery.html">Fotoğraf Galerisi</a></li>
+                                            <li><a href="video-gallery.html">Video Galerisi</a></li>
+                                            <li><a href="quality-policy.html">Kalite Politikamız</a></li>
+                                            <li><a href="announcements.html">Duyurular</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="industries.html">Faaliyet Alanlarımız</a>
+                                        <ul>
+                                            <li><a href="services-01.html">Müşavirlik Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Taahhüt Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Peyzaj Hizmetlerimiz</a></li>
+                                            <li><a href="services-02.html">Çevre Mühendisliği Hizmetlerimiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="references.html">Referanslarımız</a>
+                                        <ul>
+                                            <li><a href="reference-single.html">Müşavirlik Referanslarımız</a></li>
+                                            <li><a href="reference-single.html">Taahhüt Referanslarımız</a></li>
+                                            <li><a href="reference-single.html">Peyzaj Referanslarımız</a></li>
+                                            <li><a href="reference-single.html">Danışmanlık Referanslarımız</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="contact.html">İletişim</a></li>
+                                </ul>
+                                <!-- mainmenu end -->
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="get-a-quote.html" class="btn-main btn-line fx-slide hover-white"><span>Get a Quote</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+
+                                <div id="btn-extra">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section id="subheader" class="bg-dark text-light relative jarallax">
+                <img src="images/background/6.webp" class="jarallax-img" alt="">
+                <div class="container relative z-2">
+                    <div class="row gy-4 gx-5 align-items-center">
+                        <div class="col-lg-12">
+                            <div class="spacer-double sm-hide"></div>
+                            <h5 class="wow fadeInUp">Power Your Future with Clean Energy</h5>
+                            <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">ANTALYA ŞUBESİ</h1>
+                            <div class="border-bottom mb-3"></div>
+                            <ul class="crumb wow fadeInUp">
+                                <li><a href="index.html">Anasayfa</a></li>
+                                <li><a href="contact.html">İletişim</a></li>
+                                <li class="active">Antalya Şubesi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gradient-edge-bottom h-50"></div>
+                <div class="sw-overlay"></div>
+            </section>
+
+            <!-- Intro Section (Left Text, Right 2 Images) -->
+            <section>
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Şubemiz Hakkında</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Antalya Şubemiz ile Akdeniz Bölgesinde Hizmetinizdeyiz</h2>
+                            <div class="ps-lg-3">
+                                <p class="wow fadeInUp">
+                                    Arüv Çevre olarak Antalya şubemiz aracılığıyla Akdeniz bölgesindeki müşterilerimize daha yakın ve hızlı hizmet sunmaktayız. Modern ofisimiz ve uzman ekibimizle çevresel danışmanlık, mühendislik ve müşavirlik alanlarında profesyonel çözümler üretiyoruz.
+                                </p>
+                                <p class="wow fadeInUp">
+                                    Bölgenin çevresel dinamiklerine hakim kadromuzla, sürdürülebilir bir gelecek için çalışıyor, projelerinizde en yüksek standartlarda teknik destek sağlıyoruz. Antalya şubemiz, yerel mevzuatlara uyum ve bölgeye özel çevresel çözümler konusunda öncü bir merkez konumundadır.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="relative">
+                                <div class="w-100 pe-5 pb-5 wow scaleIn">
+                                    <img src="images/misc/l1.webp" class="w-100 rounded-1" alt="">
+                                </div>
+                                <img src="images/misc/s1.webp"
+                                    class="w-40 rounded-1 abs end-0 bottom-0 z-2 soft-shadow wow scaleIn"
+                                    data-wow-delay=".2s" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Staff Section -->
+            <section class="bg-light">
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="subtitle id-color wow fadeInUp" data-wow-delay=".0s">Ekibimiz</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Şube Çalışanlarımız</h2>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4" id="staff-container">
+                        <!-- İlk 4 Çalışan -->
+                        <div class="col-lg-3 col-md-6 staff-item">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden wow fadeInUp">
+                                <img src="images/team/1.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Ahmet Yılmaz</h4>
+                                    <p class="mb-2">Şube Müdürü</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 staff-item">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden wow fadeInUp" data-wow-delay=".1s">
+                                <img src="images/team/2.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Ayşe Demir</h4>
+                                    <p class="mb-2">Çevre Mühendisi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 staff-item">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden wow fadeInUp" data-wow-delay=".2s">
+                                <img src="images/team/3.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Mehmet Kaya</h4>
+                                    <p class="mb-2">Teknik Sorumlu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 staff-item">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden wow fadeInUp" data-wow-delay=".3s">
+                                <img src="images/team/4.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Zeynep Şahin</h4>
+                                    <p class="mb-2">Halkla İlişkiler</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gizli Çalışanlar (Örnek olarak 4 tane daha) -->
+                        <div class="col-lg-3 col-md-6 staff-item d-none">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden">
+                                <img src="images/team/1.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Caner Ak</h4>
+                                    <p class="mb-2">Saha Mühendisi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 staff-item d-none">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden">
+                                <img src="images/team/2.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Elif Yıldız</h4>
+                                    <p class="mb-2">Analiz Uzmanı</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 staff-item d-none">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden">
+                                <img src="images/team/3.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Murat Can</h4>
+                                    <p class="mb-2">İSG Uzmanı</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 staff-item d-none">
+                            <div class="bg-white relative border-gray rounded-1 overflow-hidden">
+                                <img src="images/team/4.webp" class="w-100" alt="">
+                                <div class="p-3 text-center">
+                                    <h4 class="mb-0">Selin Yurt</h4>
+                                    <p class="mb-2">Laboratuvar Sorumlusu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-12 text-center">
+                            <a href="javascript:void(0)" id="load-more-staff" class="btn-main fx-slide"><span>Daha Fazla Göster (1/8)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section>
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="subtitle id-color wow fadeInUp" data-wow-delay=".0s">Görünüm</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Şube Galerisi</h2>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Görsel 1 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/1.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 01">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap">
+                                    <img src="images/projects/1.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Video 1 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="https://www.youtube.com/watch?v=t3Y3Kg4BU3w" data-fancybox="branch-gallery" data-caption="Şube Tanıtım Videosu">
+                                <div class="video-thumb hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".1s">
+                                    <img src="https://img.youtube.com/vi/t3Y3Kg4BU3w/hqdefault.jpg" class="hover-scale-1-2" alt="">
+                                    <span class="play-badge" aria-hidden="true">▶</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 2 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/2.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 02">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".2s">
+                                    <img src="images/projects/2.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="https://www.youtube.com/watch?v=SpEHo-Wwzyg" data-fancybox="branch-gallery" data-caption="Hizmet Süreçlerimiz">
+                                <div class="video-thumb hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".3s">
+                                    <img src="https://img.youtube.com/vi/SpEHo-Wwzyg/hqdefault.jpg" class="hover-scale-1-2" alt="">
+                                    <span class="play-badge" aria-hidden="true">▶</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 3 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/3.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 03">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".4s">
+                                    <img src="images/projects/3.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 4 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/4.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 04">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".5s">
+                                    <img src="images/projects/4.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 5 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/5.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 05">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".6s">
+                                    <img src="images/projects/5.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 6 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/projects/6.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 06">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".7s">
+                                    <img src="images/projects/6.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 7 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-none">
+                            <a href="images/background/1.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 07">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".8s">
+                                    <img src="images/background/1.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Görsel 8 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-none">
+                            <a href="images/background/2.webp" data-fancybox="branch-gallery" data-caption="Şubemizden Görünüm 08">
+                                <div class="hover rounded-1 relative overflow-hidden wow zoomIn gallery-item-wrap" data-wow-delay=".9s">
+                                    <img src="images/background/2.webp" class="hover-scale-1-2" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-12 text-center">
+                            <a href="javascript:void(0)" data-fancybox-trigger="branch-gallery" class="btn-main fx-slide"><span>Tümünü Gör (10)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact & Map Section -->
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="p-40 bg-white border-gray rounded-1">
+                                <h3 class="mb-4">İletişim Bilgileri</h3>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="icofont-location-pin fs-24 me-3 id-color"></i>
+                                    <div class="flex-fill">
+                                        <span class="text-dark text-wrap">Yeşilbahçe Mah. Metin Kasapoğlu Cad. No:10 Antalya</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="icofont-phone fs-24 me-3 id-color"></i>
+                                    <span class="text-dark">+90 242 123 45 67</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="icofont-envelope fs-24 me-3 id-color"></i>
+                                    <span class="text-dark">antalya@aruvcevre.com</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="icofont-clock-time fs-24 me-3 id-color"></i>
+                                    <span class="text-dark">Pazartesi - Cuma: 09:00 - 18:00</span>
+                                </div>
+                                <div class="spacer-10"></div>
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Arüv+Çevre+A.Ş.+Antalya" target="_blank" class="btn-main w-100 text-center">Yol Tarifi Al</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="rounded-1 overflow-hidden h-100">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.736328571145!2d30.769448576553945!3d36.84879037223336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39b172591bf41%3A0xaa7cc605c7954c11!2zQXLDvHYgw4dldnJlIEEuxZ4u!5e0!3m2!1str!2str!4v1776789830283!5m2!1str!2str"
+                                    width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content end -->
+
+        <!-- footer begin -->
+        <footer class="section-dark">
+            <div class="container relative z-2">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <img src="images/logo-white.webp" class="logo-footer" alt="">
+                        <div class="spacer-20"></div>
+                        <p>At Solaria, we’re committed to delivering reliable, efficient, and sustainable solar energy
+                            solutions. From residential installations to commercial systems, we help you harness the
+                            power of the sun and reduce your energy bills while protecting the planet.</p>
+
+                        <div class="social-icons mb-sm-30">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-6">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="service-single.html">Solar Panel Installation</a></li>
+                                        <li><a href="service-single.html">Solar Panel Maintenance</a></li>
+                                        <li><a href="service-single.html">Custom System Design</a></li>
+                                        <li><a href="service-single.html">Solar Battery Storage</a></li>
+                                        <li><a href="service-single.html">System Monitoring & Reporting</a></li>
+                                        <li><a href="service-single.html">Solar Panel Upgrades</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="services.html">Our Services</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <h5>Contact Us</h5>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-location-pin me-2 id-color"></i><span>Head Office</span>
+                            </div>
+                            100 Solar Ave, San Diego, CA
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-phone me-2 id-color"></i><span>Call Us</span>
+                            </div>
+                            +1 800 987 654
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-envelope me-2 id-color"></i><span>Email Us</span>
+                            </div>
+                            support@solaria.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    &copy; 2025 - Solaria by Designesia
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="abs w-50 end-0 bottom-0 op-3">
+                <img src="images/misc/c1.webp" class="w-100 rtl-hide wow fadeInRight" data-wow-duration="2s" alt="">
+                <img src="images/misc/c1-flip.webp" class="w-100 rtl-show wow fadeInLeft" data-wow-duration="2s" alt="">
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Fancybox Initialization
+            Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
+
+            $("#load-more-staff").on("click", function() {
+                $(".staff-item.d-none").removeClass("d-none").addClass("fadeInUp animated");
+                $(this).parent().fadeOut();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
