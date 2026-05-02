@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-    <head>
-        <title>Solaria - Duyurular</title>
-        <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Solaria - Ecology & Solar Energy HTML Template"
-            name="description">
-        <meta content name="keywords">
-        <meta content name="author">
-        <!-- CSS Files
+<head>
+    <title>Solaria - Duyurular</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Solaria - Ecology & Solar Energy HTML Template" name="description">
+    <meta content name="keywords">
+    <meta content name="author">
+    <!-- CSS Files
     ================================================== -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"
-            id="bootstrap">
-        <link href="css/plugins.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <!-- color scheme -->
-        <link id="colors" href="css/colors/scheme-1.css" rel="stylesheet"
-            type="text/css">
-        <style>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-1.css" rel="stylesheet" type="text/css">
+    <style>
         .pagination .page-link {
             width: 40px;
             height: 40px;
@@ -27,29 +24,33 @@
             align-items: center;
             justify-content: center;
             border-radius: 50% !important;
-            border: 1px solid rgba(0,0,0,.1);
+            border: 1px solid rgba(0, 0, 0, .1);
             margin: 0 4px;
             color: #202020;
             font-weight: 600;
             transition: all .3s ease;
             background: transparent;
         }
+
         .pagination .page-item:first-child .page-link,
         .pagination .page-item:last-child .page-link {
             width: auto;
             padding: 0 20px;
             border-radius: 30px !important;
         }
+
         .pagination .page-item.active .page-link {
             background: var(--primary-color) !important;
             border-color: var(--primary-color) !important;
             color: #202020 !important;
         }
+
         .pagination .page-link:hover {
             background: rgba(var(--primary-color-rgb), .1);
             border-color: var(--primary-color);
             color: var(--primary-color);
         }
+
         .pagination .page-item.disabled .page-link {
             opacity: .5;
             cursor: not-allowed;
@@ -62,6 +63,7 @@
             margin: 0 !important;
             min-width: 180px !important;
         }
+
         .filter-btn {
             height: 42px !important;
             padding: 0 30px !important;
@@ -73,6 +75,7 @@
             text-transform: capitalize !important;
             margin: 0 !important;
         }
+
         .filter-arrow {
             position: absolute;
             top: 50%;
@@ -83,564 +86,505 @@
         }
     </style>
 
-    </head>
+</head>
 
-    <body>
-        <div id="wrapper">
-            <a href="#" id="back-to-top"></a>
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
 
-            <!-- preloader begin -->
-            <div id="de-loader"></div>
-            <!-- preloader end -->
+        <!-- preloader begin -->
+        <div id="de-loader"></div>
+        <!-- preloader end -->
 
-            <!-- header begin -->
-            <header class="transparent">
-                <div id="topbar">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div
-                                    class="d-flex justify-content-between xs-hide">
-                                    <div class="d-flex">
-                                        <div class="topbar-widget me-5"><a
-                                                href="#"><i
-                                                    class="icofont-location-pin"></i>100
-                                                Solar Ave, San Diego,
-                                                CA</a></div>
-                                        <div class="topbar-widget me-5"><a
-                                                href="#"><i
-                                                    class="icofont-phone"></i>+1
-                                                800 987 654</a></div>
-                                        <div class="topbar-widget me-5"><a
-                                                href="#"><i
-                                                    class="icofont-envelope"></i>support@solaria.com</a></div>
-                                    </div>
+        <!-- header begin -->
+        <header class="transparent">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="d-flex">
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-location-pin"></i>100
+                                            Solar Ave, San Diego, CA</a></div>
+                                    <div class="topbar-widget me-5"><a href="#"><i class="icofont-phone"></i>+1 800 987
+                                            654</a></div>
+                                    <div class="topbar-widget me-5"><a href="#"><i
+                                                class="icofont-envelope"></i>support@solaria.com</a></div>
+                                </div>
 
-                                    <div class="d-flex">
-                                        <div class="social-icons">
-                                            <a href="#"><i
-                                                    class="fa-brands fa-facebook fa-lg"></i></a>
-                                            <a href="#"><i
-                                                    class="fa-brands fa-x-twitter fa-lg"></i></a>
-                                            <a href="#"><i
-                                                    class="fa-brands fa-youtube fa-lg"></i></a>
-                                            <a href="#"><i
-                                                    class="fa-brands fa-pinterest fa-lg"></i></a>
-                                            <a href="#"><i
-                                                    class="fa-brands fa-instagram fa-lg"></i></a>
-                                        </div>
+                                <div class="d-flex">
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo-white.webp" alt="">
+                                        <img class="logo-mobile" src="images/logo-white.webp" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo end -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainemenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Anasayfa</a>
+                                    </li>
+                                    <li><a class="menu-item" href="about.html">Kurumsal</a>
+                                        <ul>
+                                            <li><a href="about.html">Hakkımızda</a></li>
+                                            <li><a href="#">Tanıtım Kataloğu</a></li>
+                                            <li><a href="hr.html">İnsan Kaynakları</a></li>
+                                            <li><a href="news.html">Basın Odası</a></li>
+                                            <li><a href="">Belgelerimiz</a></li>
+                                            <li><a href="team.html">Ekibimiz</a></li>
+                                            <li><a href="photo-gallery.html">Fotoğraf Galerisi</a></li>
+                                            <li><a href="video-gallery.html">Video Galerisi</a></li>
+                                            <li><a href="quality-policy.html">Kalite Politikamız</a></li>
+                                            <li><a href="announcements.html">Duyurular</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="industries.html">Faaliyet Alanlarımız</a>
+                                        <ul>
+                                            <li><a href="services-01.html">Müşavirlik Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Taahhüt Hizmetlerimiz</a></li>
+                                            <li><a href="services-01.html">Peyzaj Hizmetlerimiz</a></li>
+                                            <li><a href="services-02.html">Çevre Mühendisliği Hizmetlerimiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="">Referanslarımız</a>
+                                        <ul>
+                                            <li><a href="">Müşavirlik Referanslarımız</a></li>
+                                            <li><a href="">Taahhüt Referanslarımız</a></li>
+                                            <li><a href="">Peyzaj Referanslarımız</a></li>
+                                            <li><a href="">Danışmanlık Referanslarımız</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="contact.html">İletişim</a></li>
+                                </ul>
+                                <!-- mainmenu end -->
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="get-a-quote.html" class="btn-main btn-line fx-slide hover-white"><span>Get
+                                            a Quote</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+
+                                <div id="btn-extra">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section id="subheader" class="bg-dark text-light relative jarallax">
+                <img src="images/background/2.webp" class="jarallax-img" alt>
+                <div class="container relative z-2">
+                    <div class="row gy-4 gx-5 align-items-center">
+                        <div class="col-lg-12">
+                            <div class="spacer-double sm-hide"></div>
+                            <h5 class="wow fadeInUp">Power Your Future with
+                                Clean Energy</h5>
+                            <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">Duyurular</h1>
+                            <div class="border-bottom mb-3"></div>
+                            <ul class="crumb wow fadeInUp">
+                                <li><a href="index.html">Anasayfa</a></li>
+                                <li class="active">Duyurular</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
+                <div class="sw-overlay"></div>
+            </section>
+
+            <section class="mb-2">
+                <div class="container">
+
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+
+                            <!-- filter begin -->
+                            <div class="row gx-3 gy-3 align-items-center justify-content-end mb-4">
+                                <div class="col-12 col-sm-auto">
+                                    <div class="relative">
+                                        <select title="Kategori seçin" name="category" id="category"
+                                            class="form-control filter-select">
+                                            <option value="all">Tüm Kategoriler</option>
+                                            <option value="duyuru">Duyuru</option>
+                                            <option value="haber">Haber</option>
+                                            <option value="etkinlik">Etkinlik</option>
+                                        </select>
+                                        <i class="id-color icofont-simple-down filter-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-auto">
+                                    <a class="btn-main filter-btn w-100" href="#"><span>Filtrele</span></a>
+                                </div>
+                            </div>
+                            <!-- filter end -->
+
+
+                            <div class="border-bottom mb-4 pt-4">
+                            </div>
+
+                            <div class="mb-4 pb-4 border-bottom announcement-item mt-3">
+                                <div class="row g-4">
+                                    <div class="col-sm-9">
+                                        <h4 class="mb-2"><a href="announcement-detail.html">Yeni Güneş Enerjisi
+                                                Projemiz</a></h4>
+                                        <p class="mb-2">Arüv Çevre olarak yeni güneş enerjisi santrali projemizi
+                                            başarıyla tamamladık. Sürdürülebilir bir gelecek için çalışmaya devam
+                                            ediyoruz.</p>
+                                        <div class="d-tag">duyuru</div>
+                                        <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>10 Ocak 2025
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 text-lg-end">
+                                        <a class="btn-main fx-slide"
+                                            href="announcement-detail.html"><span>Detaylar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end -->
+
+                            <!-- item begin -->
+                            <div class="mb-4 pb-4 border-bottom announcement-item">
+                                <div class="row g-4">
+                                    <div class="col-sm-9">
+                                        <h4 class="mb-2"><a href="announcement-detail.html">Sürdürülebilirlik Zirvesi
+                                                2025</a></h4>
+                                        <p class="mb-2">Gelecek ay düzenlenecek olan Sürdürülebilirlik Zirvesi'nde ana
+                                            sponsor olarak yer alacağız. Tüm paydaşlarımızı bekliyoruz.</p>
+                                        <div class="d-tag">etkinlik</div>
+                                        <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>22 Şubat
+                                            2025</div>
+                                    </div>
+                                    <div class="col-sm-3 text-lg-end">
+                                        <a class="btn-main fx-slide"
+                                            href="announcement-detail.html"><span>Detaylar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end -->
+
+                            <!-- item begin -->
+                            <div class="mb-4 pb-4 border-bottom announcement-item">
+                                <div class="row g-4">
+                                    <div class="col-sm-9">
+                                        <h4 class="mb-2"><a href="announcement-detail.html">Yeni Hizmet Alanımız: Karbon
+                                                Ayak İzi</a></h4>
+                                        <p class="mb-2">Kurumsal karbon ayak izi hesaplama ve raporlama hizmetlerimiz
+                                            başlamıştır. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
+                                        <div class="d-tag">haber</div>
+                                        <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>05 Mart 2025
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 text-lg-end">
+                                        <a class="btn-main fx-slide"
+                                            href="announcement-detail.html"><span>Detaylar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end -->
+
+                            <!-- item begin -->
+                            <div class="mb-4 pb-4 border-bottom announcement-item">
+                                <div class="row g-4">
+                                    <div class="col-sm-9">
+                                        <h4 class="mb-2"><a href="announcement-detail.html">Sıfır Atık Belgesi
+                                                Başarımız</a></h4>
+                                        <p class="mb-2">Tüm operasyonlarımızda sıfır atık prensibini benimseyerek
+                                            bakanlık onaylı Sıfır Atık Belgesi'ni almaya hak kazandık.</p>
+                                        <div class="d-tag">duyuru</div>
+                                        <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>18 Nisan
+                                            2025</div>
+                                    </div>
+                                    <div class="col-sm-3 text-lg-end">
+                                        <a class="btn-main fx-slide"
+                                            href="announcement-detail.html"><span>Detaylar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end -->
+
+                            <!-- item begin -->
+                            <div class="mb-4 pb-4 border-bottom announcement-item">
+                                <div class="row g-4">
+                                    <div class="col-sm-9">
+                                        <h4 class="mb-2"><a href="announcement-detail.html">Dünya Çevre Günü Paneli</a>
+                                        </h4>
+                                        <p class="mb-2">5 Haziran Dünya Çevre Günü kapsamında uzmanlarımızın katılımıyla
+                                            gerçekleştireceğimiz online panele davetlisiniz.</p>
+                                        <div class="d-tag">etkinlik</div>
+                                        <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>01 Haziran
+                                            2025</div>
+                                    </div>
+                                    <div class="col-sm-3 text-lg-end">
+                                        <a class="btn-main fx-slide"
+                                            href="announcement-detail.html"><span>Detaylar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end -->
+
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center mt-5">
+                                    <li class="page-item"><a class="page-link" href="#">Önceki</a></li>
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Sonraki</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+        <!-- content end -->
+
+        <!-- footer begin -->
+        <footer class="section-dark">
+            <div class="container relative z-2">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <img src="images/logo-white.webp" class="logo-footer" alt>
+                        <div class="spacer-20"></div>
+                        <p>At Solaria, we’re committed to delivering
+                            reliable, efficient, and sustainable solar
+                            energy solutions. From residential installations
+                            to commercial systems, we help you harness the
+                            power of the sun and reduce your energy bills
+                            while protecting the planet.</p>
+
+                        <div class="social-icons mb-sm-30">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-6">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="service-single.html">Solar
+                                                Panel Installation</a></li>
+                                        <li><a href="service-single.html">Solar
+                                                Panel Maintenance</a></li>
+                                        <li><a href="service-single.html">Custom
+                                                System Design</a></li>
+                                        <li><a href="service-single.html">Solar
+                                                Battery Storage</a></li>
+                                        <li><a href="service-single.html">System
+                                                Monitoring &
+                                                Reporting</a></li>
+                                        <li><a href="service-single.html">Solar
+                                                Panel Upgrades</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="services.html">Our
+                                                Services</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="about.html">About
+                                                Us</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <h5>Contact Us</h5>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-location-pin me-2 id-color"></i><span>Head
+                                    Office</span>
+                            </div>
+                            100 Solar Ave, San Diego, CA
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-phone me-2 id-color"></i><span>Call
+                                    Us</span>
+                            </div>
+                            +1 800 987 654
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white d-flex align-items-center">
+                                <i class="icofont-envelope me-2 id-color"></i><span>Email
+                                    Us</span>
+                            </div>
+                            support@solaria.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="de-flex sm-pt10">
+                            <div class="de-flex">
                                 <div class="de-flex-col">
-                                    <!-- logo begin -->
-                                    <div id="logo">
-                                        <a href="index.html">
-                                            <img class="logo-main"
-                                                src="images/logo-white.webp"
-                                                alt>
-                                            <img class="logo-mobile"
-                                                src="images/logo-white.webp"
-                                                alt>
-                                        </a>
-                                    </div>
-                                    <!-- logo end -->
+                                    &copy; 2025 - Solaria by Designesia
                                 </div>
-                                <div class="de-flex-col header-col-mid">
-                                    <!-- mainemenu begin -->
-                                    <ul id="mainmenu">
-                                        <li><a class="menu-item"
-                                                href="index.html">Anasayfa</a></li>
-                                        <li>
-                                            <a class="menu-item active"
-                                                href="about.html">Kurumsal</a>
-                                            <ul>
-                                                <li><a
-                                                        href="about.html">Hakkımızda</a></li>
-                                                <li><a href="#">Tanıtım
-                                                        Kataloğu</a></li>
-                                                <li><a href="hr.html">İnsan
-                                                        Kaynakları</a></li>
-                                                <li><a href="news.html">Basın Odası</a></li>
-                                                <li><a
-                                                        href="#">Belgelerimiz</a></li>
-                                                <li><a
-                                                        href="team.html">Ekibimiz</a></li>
-                                                <li><a
-                                                        href="quality-policy.html">Kalite
-                                                        Politikamız</a></li>
-                                                <li><a href="announcements.html"
-                                                        class="active">Duyurular</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="menu-item"
-                                                href="industries.html">Faaliyet
-                                                Alanlarımız</a>
-                                            <ul>
-                                                <li><a
-                                                        href="services-01.html">Müşavirlik
-                                                        Hizmetlerimiz</a></li>
-                                                <li><a
-                                                        href="services-01.html">Taahhüt
-                                                        Hizmetlerimiz</a></li>
-                                                <li><a
-                                                        href="services-01.html">Peyzaj
-                                                        Hizmetlerimiz</a></li>
-                                                <li><a
-                                                        href="services-02.html">Çevre
-                                                        Mühendisliği
-                                                        Hizmetlerimiz</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="menu-item"
-                                                href="#">Referanslarımız</a>
-                                            <ul>
-                                                <li><a href="#">Müşavirlik
-                                                        Referanslarımız</a></li>
-                                                <li><a href="#">Taahhüt
-                                                        Referanslarımız</a></li>
-                                                <li><a href="#">Peyzaj
-                                                        Referanslarımız</a></li>
-                                                <li><a href="#">Danışmanlık
-                                                        Referanslarımız</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="menu-item"
-                                                href="contact.html">İletişim</a></li>
-                                    </ul>
-                                    <!-- mainmenu end -->
-                                </div>
-                                <div class="de-flex-col">
-                                    <div class="menu_side_area">
-                                        <a href="get-a-quote.html"
-                                            class="btn-main btn-line fx-slide hover-white"><span>Get
-                                                a Quote</span></a>
-                                        <span id="menu-btn"></span>
-                                    </div>
-
-                                    <div id="btn-extra">
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- header end -->
-            <!-- content begin -->
-            <div class="no-bottom no-top" id="content">
-
-                <div id="top"></div>
-
-                <section id="subheader"
-                    class="bg-dark text-light relative jarallax">
-                    <img src="images/background/2.webp" class="jarallax-img"
-                        alt>
-                    <div class="container relative z-2">
-                        <div class="row gy-4 gx-5 align-items-center">
-                            <div class="col-lg-12">
-                                <div class="spacer-double sm-hide"></div>
-                                <h5 class="wow fadeInUp">Power Your Future with
-                                    Clean Energy</h5>
-                                <h1 class="mb-3 wow fadeInUp"
-                                    data-wow-delay=".2s">Duyurular</h1>
-                                <div class="border-bottom mb-3"></div>
-                                <ul class="crumb wow fadeInUp">
-                                    <li><a href="index.html">Anasayfa</a></li>
-                                    <li class="active">Duyurular</li>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp;
+                                            Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="sw-overlay"></div>
-                </section>
-
-                <section class="mb-2">
-                    <div class="container">
-
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-
-                                <!-- filter begin -->
-                                <div class="row gx-3 gy-3 align-items-center justify-content-end mb-4">
-                                    <div class="col-12 col-sm-auto">
-                                        <div class="relative">
-                                            <select title="Kategori seçin" name="category" id="category" class="form-control filter-select">
-                                                <option value="all">Tüm Kategoriler</option>
-                                                <option value="duyuru">Duyuru</option>
-                                                <option value="haber">Haber</option>
-                                                <option value="etkinlik">Etkinlik</option>
-                                            </select>
-                                            <i class="id-color icofont-simple-down filter-arrow"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-auto">
-                                        <a class="btn-main filter-btn w-100" href="#"><span>Filtrele</span></a>
-                                    </div>
-                                </div>
-                                <!-- filter end -->
-
-                                <div class="mb-4 pb-4 border-bottom announcement-item">
-                                    <div class="row g-4">
-                                        <div class="col-sm-9">
-                                            <h4 class="mb-2"><a href="announcement-detail.html">Yeni Güneş Enerjisi Projemiz</a></h4>
-                                            <p class="mb-2">Arüv Çevre olarak yeni güneş enerjisi santrali projemizi başarıyla tamamladık. Sürdürülebilir bir gelecek için çalışmaya devam ediyoruz.</p>
-                                            <div class="d-tag">duyuru</div>
-                                            <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>10 Ocak 2025</div>
-                                        </div>
-                                        <div class="col-sm-3 text-lg-end">
-                                            <a class="btn-main fx-slide" href="announcement-detail.html"><span>Detaylar</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item end -->
-
-                                <!-- item begin -->
-                                <div class="mb-4 pb-4 border-bottom announcement-item">
-                                    <div class="row g-4">
-                                        <div class="col-sm-9">
-                                            <h4 class="mb-2"><a href="announcement-detail.html">Sürdürülebilirlik Zirvesi 2025</a></h4>
-                                            <p class="mb-2">Gelecek ay düzenlenecek olan Sürdürülebilirlik Zirvesi'nde ana sponsor olarak yer alacağız. Tüm paydaşlarımızı bekliyoruz.</p>
-                                            <div class="d-tag">etkinlik</div>
-                                            <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>22 Şubat 2025</div>
-                                        </div>
-                                        <div class="col-sm-3 text-lg-end">
-                                            <a class="btn-main fx-slide" href="announcement-detail.html"><span>Detaylar</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item end -->
-
-                                <!-- item begin -->
-                                <div class="mb-4 pb-4 border-bottom announcement-item">
-                                    <div class="row g-4">
-                                        <div class="col-sm-9">
-                                            <h4 class="mb-2"><a href="announcement-detail.html">Yeni Hizmet Alanımız: Karbon Ayak İzi</a></h4>
-                                            <p class="mb-2">Kurumsal karbon ayak izi hesaplama ve raporlama hizmetlerimiz başlamıştır. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
-                                            <div class="d-tag">haber</div>
-                                            <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>05 Mart 2025</div>
-                                        </div>
-                                        <div class="col-sm-3 text-lg-end">
-                                            <a class="btn-main fx-slide" href="announcement-detail.html"><span>Detaylar</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item end -->
-
-                                <!-- item begin -->
-                                <div class="mb-4 pb-4 border-bottom announcement-item">
-                                    <div class="row g-4">
-                                        <div class="col-sm-9">
-                                            <h4 class="mb-2"><a href="announcement-detail.html">Sıfır Atık Belgesi Başarımız</a></h4>
-                                            <p class="mb-2">Tüm operasyonlarımızda sıfır atık prensibini benimseyerek bakanlık onaylı Sıfır Atık Belgesi'ni almaya hak kazandık.</p>
-                                            <div class="d-tag">duyuru</div>
-                                            <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>18 Nisan 2025</div>
-                                        </div>
-                                        <div class="col-sm-3 text-lg-end">
-                                            <a class="btn-main fx-slide" href="announcement-detail.html"><span>Detaylar</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item end -->
-
-                                <!-- item begin -->
-                                <div class="mb-4 pb-4 border-bottom announcement-item">
-                                    <div class="row g-4">
-                                        <div class="col-sm-9">
-                                            <h4 class="mb-2"><a href="announcement-detail.html">Dünya Çevre Günü Paneli</a></h4>
-                                            <p class="mb-2">5 Haziran Dünya Çevre Günü kapsamında uzmanlarımızın katılımıyla gerçekleştireceğimiz online panele davetlisiniz.</p>
-                                            <div class="d-tag">etkinlik</div>
-                                            <div class="d-tag"><i class="icofont-ui-calendar id-color me-2"></i>01 Haziran 2025</div>
-                                        </div>
-                                        <div class="col-sm-3 text-lg-end">
-                                            <a class="btn-main fx-slide" href="announcement-detail.html"><span>Detaylar</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item end -->
-
-                                <nav aria-label="Page navigation">
-                                    <ul
-                                        class="pagination justify-content-center mt-5">
-                                        <li class="page-item"><a
-                                                class="page-link"
-                                                href="#">Önceki</a></li>
-                                        <li class="page-item active"
-                                            aria-current="page"><a
-                                                class="page-link"
-                                                href="#">1</a></li>
-                                        <li class="page-item"><a
-                                                class="page-link"
-                                                href="#">2</a></li>
-                                        <li class="page-item"><a
-                                                class="page-link"
-                                                href="#">3</a></li>
-                                        <li class="page-item"><a
-                                                class="page-link"
-                                                href="#">Sonraki</a></li>
-                                    </ul>
-                                </nav>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
+                </div>
             </div>
-            <!-- content end -->
 
-            <!-- footer begin -->
-            <footer class="section-dark">
-                <div class="container relative z-2">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-sm-6">
-                            <img src="images/logo-white.webp"
-                                class="logo-footer" alt>
-                            <div class="spacer-20"></div>
-                            <p>At Solaria, we’re committed to delivering
-                                reliable, efficient, and sustainable solar
-                                energy solutions. From residential installations
-                                to commercial systems, we help you harness the
-                                power of the sun and reduce your energy bills
-                                while protecting the planet.</p>
+            <div class="abs w-50 end-0 bottom-0 op-3">
+                <img src="images/misc/c1.webp" class="w-100 rtl-hide wow fadeInRight" data-wow-duration="2s" alt>
+                <img src="images/misc/c1-flip.webp" class="w-100 rtl-show wow fadeInLeft" data-wow-duration="2s" alt>
+            </div>
+        </footer>
 
-                            <div class="social-icons mb-sm-30">
-                                <a href="#"><i
-                                        class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i
-                                        class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#"><i
-                                        class="fa-brands fa-whatsapp"></i></a>
-                                <a href="#"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i
-                                        class="fa-brands fa-youtube"></i></a>
-                            </div>
-                        </div>
+        <!-- footer end -->
+    </div>
 
-                        <div class="col-lg-5 col-sm-12 order-lg-1 order-sm-2">
-                            <div class="row">
-                                <div class="col-lg-7 col-sm-6">
-                                    <div class="widget">
-                                        <h5>Our Services</h5>
-                                        <ul>
-                                            <li><a
-                                                    href="service-single.html">Solar
-                                                    Panel Installation</a></li>
-                                            <li><a
-                                                    href="service-single.html">Solar
-                                                    Panel Maintenance</a></li>
-                                            <li><a
-                                                    href="service-single.html">Custom
-                                                    System Design</a></li>
-                                            <li><a
-                                                    href="service-single.html">Solar
-                                                    Battery Storage</a></li>
-                                            <li><a
-                                                    href="service-single.html">System
-                                                    Monitoring &
-                                                    Reporting</a></li>
-                                            <li><a
-                                                    href="service-single.html">Solar
-                                                    Panel Upgrades</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-sm-6">
-                                    <div class="widget">
-                                        <h5>Company</h5>
-                                        <ul>
-                                            <li><a
-                                                    href="index.html">Home</a></li>
-                                            <li><a href="services.html">Our
-                                                    Services</a></li>
-                                            <li><a
-                                                    href="projects.html">Projects</a></li>
-                                            <li><a href="about.html">About
-                                                    Us</a></li>
-                                            <li><a
-                                                    href="blog.html">Blog</a></li>
-                                            <li><a
-                                                    href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6 order-lg-2 order-sm-1">
-                            <div class="widget">
-                                <h5>Contact Us</h5>
-
-                                <div
-                                    class="fw-bold text-white d-flex align-items-center">
-                                    <i
-                                        class="icofont-location-pin me-2 id-color"></i><span>Head
-                                        Office</span>
-                                </div>
-                                100 Solar Ave, San Diego, CA
-
-                                <div class="spacer-20"></div>
-
-                                <div
-                                    class="fw-bold text-white d-flex align-items-center">
-                                    <i
-                                        class="icofont-phone me-2 id-color"></i><span>Call
-                                        Us</span>
-                                </div>
-                                +1 800 987 654
-
-                                <div class="spacer-20"></div>
-
-                                <div
-                                    class="fw-bold text-white d-flex align-items-center">
-                                    <i
-                                        class="icofont-envelope me-2 id-color"></i><span>Email
-                                        Us</span>
-                                </div>
-                                support@solaria.com
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="subfooter">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="de-flex">
-                                    <div class="de-flex-col">
-                                        &copy; 2025 - Solaria by Designesia
-                                    </div>
-                                    <ul class="menu-simple">
-                                        <li><a href="#">Terms &amp;
-                                                Conditions</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="abs w-50 end-0 bottom-0 op-3">
-                    <img src="images/misc/c1.webp"
-                        class="w-100 rtl-hide wow fadeInRight"
-                        data-wow-duration="2s" alt>
-                    <img src="images/misc/c1-flip.webp"
-                        class="w-100 rtl-show wow fadeInLeft"
-                        data-wow-duration="2s" alt>
-                </div>
-            </footer>
-
-            <!-- footer end -->
+    <!-- overlay content begin -->
+    <div id="extra-wrap" class="text-light">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
         </div>
 
-        <!-- overlay content begin -->
-        <div id="extra-wrap" class="text-light">
-            <div id="btn-close">
-                <span></span>
-                <span></span>
-            </div>
+        <div id="extra-content">
+            <img src="images/logo-white.webp" class="w-150px" alt>
 
-            <div id="extra-content">
-                <img src="images/logo-white.webp" class="w-150px" alt>
+            <div class="spacer-30-line"></div>
 
-                <div class="spacer-30-line"></div>
+            <h5>Our Services</h5>
+            <ul class="ul-check">
+                <li>Solar Panel Installation</li>
+                <li>Solar Panel Maintenance</li>
+                <li>Custom System Design</li>
+                <li>Solar Battery Storage</li>
+                <li>System Monitoring & Reporting</li>
+                <li>Solar Panel Upgrades</li>
+            </ul>
 
-                <h5>Our Services</h5>
-                <ul class="ul-check">
-                    <li>Solar Panel Installation</li>
-                    <li>Solar Panel Maintenance</li>
-                    <li>Custom System Design</li>
-                    <li>Solar Battery Storage</li>
-                    <li>System Monitoring & Reporting</li>
-                    <li>Solar Panel Upgrades</li>
-                </ul>
+            <div class="spacer-30-line"></div>
 
-                <div class="spacer-30-line"></div>
+            <h5>Contact Us</h5>
+            <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Friday
+                08.00 - 18.00</div>
+            <div><i class="icofont-location-pin me-2 op-5"></i>100 Solar
+                Ave, San Diego, CA </div>
+            <div><i class="icofont-envelope me-2 op-5"></i>support@solaria.com</div>
 
-                <h5>Contact Us</h5>
-                <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Friday
-                    08.00 - 18.00</div>
-                <div><i class="icofont-location-pin me-2 op-5"></i>100 Solar
-                    Ave, San Diego, CA </div>
-                <div><i
-                        class="icofont-envelope me-2 op-5"></i>support@solaria.com</div>
+            <div class="spacer-30-line"></div>
 
-                <div class="spacer-30-line"></div>
+            <h5>About Us</h5>
+            <p>At Solaria, we’re committed to delivering reliable,
+                efficient, and sustainable solar energy solutions. From
+                residential installations to commercial systems, we help you
+                harness the power of the sun and reduce your energy bills
+                while protecting the planet.</p>
 
-                <h5>About Us</h5>
-                <p>At Solaria, we’re committed to delivering reliable,
-                    efficient, and sustainable solar energy solutions. From
-                    residential installations to commercial systems, we help you
-                    harness the power of the sun and reduce your energy bills
-                    while protecting the planet.</p>
-
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
+    </div>
 
-        <!-- Javascript Files
+    <!-- Javascript Files
     ================================================== -->
-        <script src="js/plugins.js"></script>
-        <script src="js/designesia.js"></script>
-        <script src="js/custom-marquee.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/custom-marquee.js"></script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // Preloader Safety
-                setTimeout(function() {
-                    const loader = document.getElementById('de-loader');
-                    if (loader && loader.style.display !== 'none') {
-                        loader.style.display = 'none';
-                    }
-                }, 2000);
-
-                const filterBtn = document.querySelector('.filter-btn');
-                const categorySelect = document.querySelector('#category');
-                const items = document.querySelectorAll('.announcement-item');
-
-                if(filterBtn && categorySelect){
-                    filterBtn.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const selectedCategory = categorySelect.value.toLowerCase();
-
-                        items.forEach(item => {
-                            const tags = Array.from(item.querySelectorAll('.d-tag')).map(t => t.textContent.toLowerCase());
-                            if (selectedCategory === 'all' || tags.includes(selectedCategory)) {
-                                item.style.display = 'block';
-                            } else {
-                                item.style.display = 'none';
-                            }
-                        });
-                    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Preloader Safety
+            setTimeout(function () {
+                const loader = document.getElementById('de-loader');
+                if (loader && loader.style.display !== 'none') {
+                    loader.style.display = 'none';
                 }
-            });
-        </script>
+            }, 2000);
 
-    </body>
+            const filterBtn = document.querySelector('.filter-btn');
+            const categorySelect = document.querySelector('#category');
+            const items = document.querySelectorAll('.announcement-item');
+
+            if (filterBtn && categorySelect) {
+                filterBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const selectedCategory = categorySelect.value.toLowerCase();
+
+                    items.forEach(item => {
+                        const tags = Array.from(item.querySelectorAll('.d-tag')).map(t => t.textContent.toLowerCase());
+                        if (selectedCategory === 'all' || tags.includes(selectedCategory)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
 
 </html>
