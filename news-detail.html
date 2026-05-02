@@ -18,6 +18,9 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-1.css" rel="stylesheet" type="text/css" >
 
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <style>
         .d-tagline span {
             background: #FBEC6B !important;
@@ -25,8 +28,239 @@
             font-weight: 700;
         }
 
-        .blog-read img {
+        .news-meta {
+            display: flex;
+            gap: 20px;
             margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .news-meta div {
+            font-size: 14px;
+            font-weight: 600;
+            color: #606060;
+            display: flex;
+            align-items: center;
+        }
+
+        .news-meta i {
+            color: #FBEC6B;
+            margin-right: 8px;
+        }
+
+        .sidebar-widget {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sidebar-widget::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #FBEC6B;
+        }
+
+        .sidebar-widget h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            display: block;
+            color: #222;
+        }
+
+        .latest-news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .latest-news-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .latest-news-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .latest-news-list .d-image {
+            width: 70px;
+            min-width: 70px;
+            margin-right: 15px;
+        }
+
+        .latest-news-list .d-image img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .latest-news-list .d-content {
+            flex: 1;
+        }
+
+        .latest-news-list a {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #333;
+            line-height: 1.3;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .latest-news-list a:hover {
+            color: #FBEC6B;
+        }
+
+        .latest-news-list span {
+            font-size: 12px;
+            opacity: 0.7;
+            color: #666;
+            display: block;
+            font-weight: 500;
+        }
+
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category-list li {
+            margin-bottom: 10px;
+        }
+
+        .category-list a {
+            display: block;
+            padding: 5px 12px;
+            color: #333;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .category-list a::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #FBEC6B;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .category-list a:hover {
+            background: #FBEC6B;
+            color: #000;
+            padding-left: 30px;
+            border-radius: 4px;
+        }
+
+        .category-list a:hover::before {
+            color: #000;
+        }
+
+        .tag-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-list li a {
+            display: block;
+            padding: 6px 15px;
+            background: #f5f5f5;
+            color: #444;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .tag-list li a:hover {
+            background: #FBEC6B;
+            color: #000;
+        }
+
+        /* Custom Back Button Slide Effect */
+        .btn-custom-slide {
+            overflow: hidden !important;
+            position: relative;
+        }
+
+        .btn-custom-slide .btn-orig {
+            display: block;
+            transition: all .3s ease-in-out;
+        }
+
+        .btn-custom-slide:hover .btn-orig {
+            transform: translateY(40px);
+            opacity: 0;
+        }
+
+        .btn-custom-slide .btn-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(-40px);
+            transition: all .3s ease-in-out;
+            color: #000 !important;
+            z-index: 1;
+        }
+
+        .btn-custom-slide:hover .btn-hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-custom-slide .btn-hover i {
+            font-weight: 400 !important;
+            margin-right: 8px;
+        }
+
+        /* Equal height gallery items */
+        .gallery-item-wrap {
+            aspect-ratio: 4 / 3;
+            width: 100%;
+            overflow: hidden;
+            display: block;
+        }
+
+        .gallery-item-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -87,7 +321,7 @@
                                 <ul id="mainmenu">
                                     <li><a class="menu-item" href="index.html">Anasayfa</a>
                                     </li>
-                                    <li><a class="menu-item" href="about.html">Kurumsal</a>
+                                    <li><a class="menu-item active" href="about.html">Kurumsal</a>
                                         <ul>
                                             <li><a href="about.html">Hakkımızda</a></li>
                                             <li><a href="#">Tanıtım Kataloğu</a></li>
@@ -109,12 +343,12 @@
                                             <li><a href="services-02.html">Çevre Mühendisliği Hizmetlerimiz</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="menu-item" href="">Referanslarımız</a>
+                                    <li><a class="menu-item" href="references.html">Referanslarımız</a>
                                         <ul>
-                                            <li><a href="">Müşavirlik Referanslarımız</a></li>
-                                            <li><a href="">Taahhüt Referanslarımız</a></li>
-                                            <li><a href="">Peyzaj Referanslarımız</a></li>
-                                            <li><a href="">Danışmanlık Referanslarımız</a></li>
+                                            <li><a href="references.html">Müşavirlik Referanslarımız</a></li>
+                                            <li><a href="references.html">Taahhüt Referanslarımız</a></li>
+                                            <li><a href="references.html">Peyzaj Referanslarımız</a></li>
+                                            <li><a href="references.html">Danışmanlık Referanslarımız</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="menu-item" href="contact.html">İletişim</a></li>
@@ -149,12 +383,13 @@
                     <div class="row gy-4 gx-5 align-items-center">
                         <div class="col-lg-12">
                             <div class="spacer-double sm-hide"></div>
-                            <h2 class="mb-3 wow fadeInUp" data-wow-delay=".2s">Güneş Enerjisinde Yeni Teknolojiler</h2>
+                            <h5 class="wow fadeInUp">Haber Detayı</h5>
+                            <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">Güneş Enerjisinde Yeni Teknolojiler</h1>
                             <div class="border-bottom mb-3"></div>
                             <ul class="crumb wow fadeInUp">
                                 <li><a href="index.html">Anasayfa</a></li>
                                 <li><a href="news.html">Haberler</a></li>
-                                <li class="active">Güneş Enerjisinde Yeni Teknolojiler</li>
+                                <li class="active">Detay</li>
                             </ul>   
                         </div>
                     </div>
@@ -168,6 +403,13 @@
                 <div class="container">
                     <div class="row gx-5">
                         <div class="col-lg-8">
+                            
+                            <div class="news-meta">
+                                <div><i class="icofont-ui-calendar"></i>15 Mart 2025</div>
+                                <div><i class="icofont-tag"></i>Teknoloji</div>
+                                <div><i class="icofont-user"></i>Arüv Çevre</div>
+                            </div>
+
                             <div class="blog-read">
 
                                 <div class="post-image rounded-1 mb-4 overflow-hidden relative">
@@ -219,87 +461,118 @@
 
                             <div class="spacer-single"></div>
 
-                            <div id="blog-comment">
-                                <h4>Yorumlar (0)</h4>
+                            <!-- gallery begin -->
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <h4>Haber Galerisi</h4>
+                                </div>
+                                
+                                <!-- Visible Items (3) -->
+                                <div class="col-md-4 col-6">
+                                    <a href="images/projects/1.webp" data-fancybox="news-gallery" data-caption="Güneş Paneli Montajı">
+                                        <div class="gallery-item-wrap hover rounded-1 relative overflow-hidden">
+                                            <img src="images/projects/1.webp" class="hover-scale-1-2" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="https://www.youtube.com/watch?v=_UhRNW6HL6Y" data-fancybox="news-gallery" data-caption="Arüv Çevre Proje Videosu 01">
+                                        <div class="gallery-item-wrap hover rounded-1 relative overflow-hidden">
+                                            <img src="https://img.youtube.com/vi/_UhRNW6HL6Y/hqdefault.jpg" class="hover-scale-1-2" alt="">
+                                            <div class="absolute start-50 top-50 translate-middle z-2">
+                                                <i class="icofont-play-alt-2 fs-40 text-white op-8"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="https://www.youtube.com/watch?v=t3Y3Kg4BU3w" data-fancybox="news-gallery" data-caption="Arüv Çevre Proje Videosu 02">
+                                        <div class="gallery-item-wrap hover rounded-1 relative overflow-hidden">
+                                            <img src="https://img.youtube.com/vi/t3Y3Kg4BU3w/hqdefault.jpg" class="hover-scale-1-2" alt="">
+                                            <div class="absolute start-50 top-50 translate-middle z-2">
+                                                <i class="icofont-play-alt-2 fs-40 text-white op-8"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
 
-                                <div class="spacer-half"></div>
+                                <!-- Hidden Items for Fancybox -->
+                                <div class="d-none">
+                                    <a href="images/projects/2.webp" data-fancybox="news-gallery" data-caption="Güneş Enerjisi Sahası"></a>
+                                    <a href="images/projects/3.webp" data-fancybox="news-gallery" data-caption="Panel Bakım Çalışmaları"></a>
+                                    <a href="images/projects/4.webp" data-fancybox="news-gallery" data-caption="İnverter Kurulumu"></a>
+                                </div>
 
-                                <div id="comment-form-wrapper">
-                                    <h4>Yorum Bırakın</h4>
-                                    <div class="comment_form_holder">
-                                        <form id="contact_form" name="form1" class="form-border" method="post" action="#">
-
-                                            <label>Adınız</label>
-                                            <input type="text" name="name" id="name" class="form-control" >
-
-                                            <label>E-posta <span class="req">*</span></label>
-                                            <input type="text" name="email" id="email" class="form-control" >
-                                            
-                                            <label>Mesajınız <span class="req">*</span></label>
-                                            <textarea cols="10" rows="10" name="message" id="message" class="form-control"></textarea>
-                                            
-                                            <p id="btnsubmit">
-                                                <input type="submit" id="send" value="Gönder" class="btn-main" ></p>
-
-                                        </form>
-                                    </div>
+                                <div class="col-md-12 text-center mt-4">
+                                    <a class="btn-main fx-slide" href="javascript:;" onclick="document.querySelector('[data-fancybox=\'news-gallery\']').click();"><span>Tümünü Gör (6)</span></a>
                                 </div>
                             </div>
+                            <!-- gallery end -->
+
+                            <div class="spacer-single"></div>
+                            
+                            <a href="news.html" class="btn-main btn-custom-slide">
+                                <span class="btn-orig"><i class="icofont-arrow-left me-2"></i>Haberlere Dön</span>
+                                <span class="btn-hover"><i class="icofont-arrow-left"></i><span>Haberlere Dön</span></span>
+                            </a>
 
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="widget widget-post">
-                                <h4>Popüler Haberler</h4>
-                                <ul class="de-bloglist-type-1">
+                            <div class="sidebar-widget">
+                                <h4>Son Haberler</h4>
+                                <ul class="latest-news-list">
                                   <li>
                                     <div class="d-image">
-                                      <img src="images/blog/2.webp" alt="">
+                                        <img src="images/blog/1.webp" alt="">
                                     </div>
                                     <div class="d-content">
-                                      <a href="#">
-                                        <h4>Güneş Enerjisinin Temelleri</h4>
-                                      </a>
-                                      <div class="d-date">10 Oca 2025</div>
+                                        <a href="#">Güneş Enerjisinin Temelleri</a>
+                                        <span>10 Oca 2025</span>
                                     </div>
                                   </li>
 
                                   <li>
                                     <div class="d-image">
-                                      <img src="images/blog/3.webp" alt="">
+                                        <img src="images/blog/2.webp" alt="">
                                     </div>
                                     <div class="d-content">
-                                      <a href="#">
-                                        <h4>2025'te Güneş Enerjisine Geçmenin Avantajları</h4>
-                                      </a>
-                                      <div class="d-date">22 Şub 2025</div>
+                                        <a href="#">2025'te Güneş Enerjisine Geçiş</a>
+                                        <span>22 Şub 2025</span>
                                     </div>
                                   </li>
 
                                   <li>
                                     <div class="d-image">
-                                      <img src="images/blog/4.webp" alt="">
+                                        <img src="images/blog/3.webp" alt="">
                                     </div>
                                     <div class="d-content">
-                                      <a href="#">
-                                        <h4>Güneş Panelleri Hakkında Bilinen Yanlışlar</h4>
-                                      </a>
-                                      <div class="d-date">05 Mar 2025</div>
+                                        <a href="#">Güneş Panelleri Hakkında Yanlışlar</a>
+                                        <span>05 Mar 2025</span>
                                     </div>
                                   </li>
                                 </ul>
+                            </div>
 
+                            <div class="sidebar-widget">
+                                <h4>Kategoriler</h4>
+                                <ul class="category-list">
+                                    <li><a href="news.html">Kurumsal (12)</a></li>
+                                    <li><a href="news.html">Proje (8)</a></li>
+                                    <li><a href="news.html">Teknoloji (5)</a></li>
+                                    <li><a href="news.html">Etkinlik (3)</a></li>
+                                </ul>
                             </div>
                             
-                            <div class="widget widget_tags">
+                            <div class="sidebar-widget">
                                 <h4>Popüler Etiketler</h4>
-                                <ul>
-                                    <li><a href="#link">Güneş</a></li>
-                                    <li><a href="#link">Enerji</a></li>
-                                    <li><a href="#link">Teknoloji</a></li>
-                                    <li><a href="#link">Sürdürülebilirlik</a></li>
-                                    <li><a href="#link">Çevre</a></li>
-                                    <li><a href="#link">Kurumsal</a></li>
+                                <ul class="tag-list">
+                                    <li><a href="#">Güneş</a></li>
+                                    <li><a href="#">Enerji</a></li>
+                                    <li><a href="#">Teknoloji</a></li>
+                                    <li><a href="#">Çevre</a></li>
+                                    <li><a href="#">Kurumsal</a></li>
+                                    <li><a href="#">Sürdürülebilirlik</a></li>
                                 </ul>
                             </div>
 
@@ -466,6 +739,14 @@
     <script src="js/swiper.js"></script>
     <script src="js/custom-swiper-1.js"></script>
     <script src="js/custom-marquee.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
 
 </body>
 
