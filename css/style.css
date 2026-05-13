@@ -134,7 +134,9 @@ Table of content:
   --border-color:#bbbbbb;
   --container-max-width:1240px;
   /* button */
-  --btn-color: var(--heading-font-color);
+  /* --btn-color: var(--heading-font-color); */
+  /* edited */
+  --btn-color: white;
   --btn-font-family: var(--body-font);
   --btn-font-size: 15px;
   --btn-font-weight: bold;
@@ -143,6 +145,17 @@ Table of content:
   --btn-rounded: 8px;
   --btn-text-decoration: none;
   --btn-text-transform: none;
+}
+
+/* added */
+.js-marquee, .item h3, .item span, .icon_phone::before, .icon_clock::before, .icon_mail::before, .ms-3 h4, .ms-3 p {
+  color: white !important;
+}
+.icofont-quote-left::before {
+  color: white !important;
+}
+.icofont-quote-left h3 {
+  color: white !important;
 }
 
 /* base background color */
@@ -714,7 +727,7 @@ header .header-col.mid .social-icons {
 }
 /*
 #mainmenu>li::before {
-  content: counter(my-awesome-counter) ' —';
+  content: counter(my-awesome-counter) ' â€”';
   right: 8px;
   top: 5px;
   color:var(--primary-color);
@@ -11715,7 +11728,7 @@ img {
     }
 
     .de-step-arrow::after {
-      content: "→";
+      content: "â†’";
       font-size: 24px;
       position: absolute;
       right: -25px;
@@ -11729,7 +11742,7 @@ img {
     }
 
     .rtl .de-step-arrow::before {
-      content: "←";
+      content: "â†";
       font-size: 24px;
       position: absolute;
       right: auto;
@@ -13119,4 +13132,113 @@ img {
     margin-left: auto;
     width: auto;
   }
+}
+
+
+/* Language Switcher Custom Styles */
+.de-switch-lang {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    z-index: 2000;
+}
+
+.de-switch-lang i {
+    margin-right: 5px;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.de-switch-lang:after {
+    font-family: 'FontAwesome';
+    content: '\f078';
+    font-size: 8px;
+    margin-left: 8px;
+    opacity: .5;
+}
+
+.de-switch-lang ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 130px; /* Slightly wider for full names */
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    z-index: 2001;
+}
+
+.de-switch-lang:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: calc(100% + 5px);
+}
+
+.de-switch-lang ul li {
+    padding: 0;
+    display: block;
+    float: none !important;
+}
+
+.de-switch-lang ul li a {
+    color: #333 !important;
+    display: block;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: all .2s;
+    text-align: left;
+    font-weight: 500;
+}
+
+.de-switch-lang ul li a:hover {
+    background: #f8f9fa;
+    color: var(--primary-color) !important;
+}
+
+.de-switch-lang ul li img {
+    width: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    border-radius: 2px;
+}
+
+/* Ensure topbar does not clip the dropdown */
+#topbar {
+    overflow: visible !important;
+}
+
+/* Mobile specific language switcher adjustments */
+@media (max-width: 991px) {
+    .menu_side_area .de-switch-lang {
+        color: #fff;
+        margin-right: 15px;
+        z-index: 9999 !important;
+    }
+    
+    .menu_side_area .de-switch-lang ul {
+        position: fixed; /* Bypasses parent overflow: hidden */
+        right: 10px;
+        left: auto;
+        top: 60px; /* Adjusted to sit below the mobile header */
+        z-index: 10000 !important;
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+}
+
+/* Adjust topbar for vertical alignment */
+#topbar .d-flex {
+    align-items: center;
 }

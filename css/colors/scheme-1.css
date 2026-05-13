@@ -1,3 +1,195 @@
+/* 
+   KURUMSAL YEŞİL (#0daf2b) ALTERNATİF RENK PALETLERİ 
+   Aşağıdaki bloklardan birini aktif edip diğerlerini yorum satırı yaparak deneyebilirsiniz.
+*/
+
+/* --- YEŞİL VURGU & TOPRAK ARKA PLAN (İSTENEN KOMBİNASYON) --- */
+
+/* PALET 10: Earthy Green (Koyu Toprak Arka Plan & Yeşil Vurgu) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #3d2b1f;
+  --bg-dark-2: #2a1d15;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 61, 43, 31;
+}
+*/
+
+/* PALET 13: Clay & Green (Killi Toprak Arka Plan & Yeşil Vurgu) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #4a3728;
+  --bg-dark-2: #32251b;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 74, 55, 40;
+}
+*/
+
+/* PALET 14: Muddy Emerald (Çamur Tonlu Arka Plan & Yeşil Vurgu) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #2b261e;
+  --bg-dark-2: #1e1a14;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 43, 38, 30;
+}
+*/
+
+
+/* --- DİĞER ALTERNATİFLER --- */
+
+/* PALET 9: Pure Green Background (Yeşil Arka Plan & Kum Sarısı Vurgu) */
+/*
+* {
+  --primary-color: #FBEC6B;
+  --primary-color-rgb: 251, 236, 107;
+  --bg-dark-1: #0daf2b;
+  --bg-dark-2: #098a22;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 13, 175, 43;
+}
+*/
+
+/* PALET 11: Fertile Soil (Toprak Vurgu & Koyu Yeşil Arka Plan) */
+/*
+* {
+  --primary-color: #d2b48c;
+  --primary-color-rgb: 210, 180, 140;
+  --bg-dark-1: #0d2d1b;
+  --bg-dark-2: #091e12;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 13, 45, 27;
+}
+*/
+
+/* PALET 12: Organic Balance (Kızıl-Kahve Vurgu & Koyu Yeşil Arka Plan) */
+/*
+* {
+  --primary-color: #cd853f;
+  --primary-color-rgb: 205, 133, 63;
+  --bg-dark-1: #0a120b;
+  --bg-dark-2: #060b06;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 10, 18, 11;
+}
+*/
+
+/* PALET 6: Deep Emerald Night (Arka Planda Belirgin Yeşil Tonu) */
+/* 
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #082010;
+  --bg-dark-2: #041008;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 8, 32, 16;
+} */
+
+
+/* PALET 7: Rich Forest (Daha Aydınlık Yeşil Arka Plan & Saman Sarısı Vurgu) */
+/*
+* {
+  --primary-color: #e4d96f;
+  --primary-color-rgb: 228, 217, 111;
+  --bg-dark-1: #0d2d1b;
+  --bg-dark-2: #091e12;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 13, 45, 27;
+}
+*/
+
+/* PALET 8: High-Contrast Green (Koyu Yosun Arka Plan & Açık Nane Vurgu) */
+/*
+* {
+  --primary-color: #98ff98;
+  --primary-color-rgb: 152, 255, 152;
+  --bg-dark-1: #1a3d2b;
+  --bg-dark-2: #122b1e;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 26, 61, 43;
+}
+*/
+
+
+/* PALET 1: Nature & Deep Forest (Doğal ve Derin Yeşil Tonları) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #0a1a0f;
+  --bg-dark-2: #051009;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 10, 26, 15;
+}
+*/
+
+/* PALET 2: Modern Tech & Charcoal (Modern ve Nötr Füme Tonları) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #1a1c1a;
+  --bg-dark-2: #111311;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 26, 28, 26;
+}
+*/
+
+/* PALET 3: Midnight Emerald (Gece Yarısı Safir & Yeşil Uyumu) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #0d131a;
+  --bg-dark-2: #080c11;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 13, 19, 26;
+}
+*/
+
+/* PALET 4: Premium Dark Black (Tam Karanlık ve Premium Görünüm) */
+/*
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #121212;
+  --bg-dark-2: #000000;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 18, 18, 18;
+}
+*/
+
+/* PALET 5: Corporate Green-Grey (Kurumsal ve Dengeli Gri-Yeşil) */
+/* 
+* {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #1c221d;
+  --bg-dark-2: #141a15;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 28, 34, 29;
+} */
+
+
+/* ŞU AN AKTİF OLAN (VARSYILAN - GÜNCEL YEŞİL) */
+/* * {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #0a120b;
+  --bg-dark-2: #060b06;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 10, 18, 11; 
+} */
+
+
+/* ORİJİNAL TEMA (YEDEK) */
+/*
 * {
   --primary-color: #FBEC6B;
   --primary-color-rgb: 251, 236, 107;
@@ -6,3 +198,291 @@
   --bg-dark-3: #1e1e1e;  
   --bg-dark-1-rgb: 22, 53, 99;
 }
+*/
+
+
+/* CLAUDE */
+/* PALET 15 */
+/* * {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #163563;
+  --bg-dark-2: #0f2647;
+  --bg-dark-3: #1e1e1e;
+  --bg-dark-1-rgb: 22, 53, 99;
+} */
+
+
+/* PALET 16 */
+/* * {
+  --primary-color: #FBEC6B;
+  --primary-color-rgb: 251, 236, 107;
+  --bg-dark-1: #0a5c18;
+  --bg-dark-2: #073d10;
+  --bg-dark-3: #1a2b1c;
+  --bg-dark-1-rgb: 10, 92, 24;
+} */
+
+/* PALET 17 */
+/* * {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  --bg-dark-1: #0a5c18;
+  --bg-dark-2: #073d10;
+  --bg-dark-3: #1a2b1c;
+  --bg-dark-1-rgb: 10, 92, 24;
+} */
+
+
+/* gemini 3.1 */
+
+/* palet 18 */
+
+/* * {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  
+  --bg-dark-1: #111827; 
+  --bg-dark-1-rgb: 17, 24, 39;
+  --bg-dark-2: #030712; 
+  --bg-dark-3: #1f2937; 
+} */
+
+
+/* palet 19 */
+
+/* * {
+  --primary-color: #ffffff;
+  --primary-color-rgb: 255, 255, 255;
+  
+  --bg-dark-1: #0daf2b; 
+  --bg-dark-1-rgb: 13, 175, 43;
+  --bg-dark-2: #098220; 
+  --bg-dark-3: #065916; 
+} */
+
+/* palet 20 */
+/* * {
+  --primary-color: #0daf2b;
+  --primary-color-rgb: 13, 175, 43;
+  
+  --bg-dark-1: #092610; 
+  --bg-dark-1-rgb: 9, 38, 16;
+  --bg-dark-2: #05170a; 
+  --bg-dark-3: #0c3316; 
+} */
+
+
+/* gpt 5.5 thinking*/
+
+/* palet 21 */
+/* * {
+  --primary-color: #0DAF2B;
+  --primary-color-rgb: 13, 175, 43;
+
+  --bg-dark-1: #102B4C;
+  --bg-dark-2: #0B1D33;
+  --bg-dark-3: #121A16;
+
+  --bg-dark-1-rgb: 16, 43, 76;
+} */
+
+/* palet 22 */
+/* * {
+  --primary-color: #0DAF2B;
+  --primary-color-rgb: 13, 175, 43;
+
+  --bg-dark-1: #16251A;
+  --bg-dark-2: #0E1711;
+  --bg-dark-3: #1E1E1E;
+
+  --bg-dark-1-rgb: 22, 37, 26;
+} */
+
+/* palet 23 */
+/* * {
+  --primary-color: #FBEC6B;
+  --primary-color-rgb: 251, 236, 107;
+
+  --bg-dark-1: #0DAF2B;
+  --bg-dark-2: #087F20;
+  --bg-dark-3: #064D16;
+
+  --bg-dark-1-rgb: 13, 175, 43;
+} */
+
+/* palet 24 */
+/* * {
+  --primary-color: #A7F3B4;
+  --primary-color-rgb: 167, 243, 180;
+
+  --bg-dark-1: #053B13;
+  --bg-dark-2: #04280D;
+  --bg-dark-3: #07150B;
+
+  --bg-dark-1-rgb: 5, 59, 19;
+} */
+
+/* palet 25 */
+/* * {
+  --primary-color: #12C43A;
+  --primary-color-rgb: 18, 196, 58;
+
+  --bg-dark-1: #053B13;
+  --bg-dark-2: #04280D;
+  --bg-dark-3: #07150B;
+
+  --bg-dark-1-rgb: 5, 59, 19;
+} */
+
+/* palet 26 */
+/* * {
+  --primary-color: #0DAF2B;
+  --primary-color-rgb: 13, 175, 43;
+
+  --bg-dark-1: #111827;
+  --bg-dark-2: #0B1120;
+  --bg-dark-3: #1F2937;
+
+  --bg-dark-1-rgb: 17, 24, 39;
+} */
+
+/* palet 27 */
+/* * {
+  --primary-color: #0DAF2B;
+  --primary-color-rgb: 13, 175, 43;
+
+  --bg-dark-1: #102B4C;
+  --bg-dark-2: #0B1D33;
+  --bg-dark-3: #121A16;
+
+  --bg-dark-1-rgb: 16, 43, 76;
+} */
+
+
+
+/* claude final */
+/* palet 28  */
+
+/* * {
+ --primary-color:
+  #0daf2b;
+ --primary-color-rgb:
+  13, 175, 43;
+ --secondary-color:
+  #FBEC6B;
+ --bg-dark-1:
+  #0e2d4e;
+ --bg-dark-2:
+  #091e34;
+ --bg-dark-3:
+  #1a1f1b;
+ --bg-dark-1-rgb:
+  14, 45, 78;
+} */
+
+/* Chat GPT */
+
+/* 1. Tema - Alternatif A */
+/* * {
+  --primary-color: #0a8f24;
+  --primary-color-rgb: 10, 143, 36;
+
+  --bg-dark-1: #1c221d;
+  --bg-dark-2: #141a15;
+  --bg-dark-3: #1e1e1e;
+
+  --bg-dark-1-rgb: 28, 34, 29;
+} */
+
+/* 1. Tema - Alternatif B *** */
+/* * {
+  --primary-color: #087a1f;
+  --primary-color-rgb: 8, 122, 31;
+
+  --bg-dark-1: #1b221d;
+  --bg-dark-2: #111712;
+  --bg-dark-3: #202320;
+
+  --bg-dark-1-rgb: 27, 34, 29;
+} */
+
+/* 1. Tema - Alternatif C */
+/* * {
+  --primary-color: #116b28;
+  --primary-color-rgb: 17, 107, 40;
+
+  --bg-dark-1: #1a241d;
+  --bg-dark-2: #101711;
+  --bg-dark-3: #202420;
+
+  --bg-dark-1-rgb: 26, 36, 29;
+} */
+
+/* 7. Tema - Alternatif A *** */
+* {
+  --primary-color: #0a8f24;
+  --primary-color-rgb: 10, 143, 36;
+
+  --bg-dark-1: #092610;
+  --bg-dark-1-rgb: 9, 38, 16;
+
+  --bg-dark-2: #05170a;
+  --bg-dark-3: #0c3316;
+}
+
+/* 7. Tema - Alternatif B */
+/* * {
+  --primary-color: #087a1f;
+  --primary-color-rgb: 8, 122, 31;
+
+  --bg-dark-1: #0a2110;
+  --bg-dark-1-rgb: 10, 33, 16;
+
+  --bg-dark-2: #051207;
+  --bg-dark-3: #0e2d16;
+} */
+
+/* 7. Tema - Alternatif C */
+/* * {
+  --primary-color: #116b28;
+  --primary-color-rgb: 17, 107, 40;
+
+  --bg-dark-1: #0d2414;
+  --bg-dark-1-rgb: 13, 36, 20;
+
+  --bg-dark-2: #07140a;
+  --bg-dark-3: #12311b;
+} */
+
+/* Claude */
+
+/* 1. Tema — Alt. B */
+/* * {
+  --primary-color: #0f7c21;
+  --primary-color-rgb: 15, 124, 33;
+  --bg-dark-1: #1c221d;
+  --bg-dark-2: #141a15;
+  --bg-dark-3: #1e1e1e;
+  --bg-dark-1-rgb: 28, 34, 29;
+} */
+
+/* 7. Tema — Alt. B */
+/* * {
+  --primary-color: #0f7c21;
+  --primary-color-rgb: 15, 124, 33;
+  --bg-dark-1: #092610;
+  --bg-dark-1-rgb: 9, 38, 16;
+  --bg-dark-2: #05170a;
+  --bg-dark-3: #0c3316;
+} */
+
+/* gemini */
+/* * {
+  --primary-color: #08751c;
+  --primary-color-rgb: 8, 117, 28;
+  --bg-dark-1: #1c221d;
+  --bg-dark-2: #141a15;
+  --bg-dark-3: #1e1e1e;  
+  --bg-dark-1-rgb: 28, 34, 29;
+} */
